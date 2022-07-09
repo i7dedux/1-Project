@@ -167,23 +167,10 @@ a {
     border-radius: 7px;
 }
 
-.col-1 {
-    height: 100px;
-}
-
-.col-2 {
-    height: 100px;
-}
-
-.col-3 {
-    height: 100px;
-}
-
 
 /* Quote */
 
 .quote {
-    margin: 300px 0;
     padding: 50px 100px;
     height: 150px;
     background-image: url('img/sky.jpg');
@@ -213,7 +200,6 @@ a {
     background-attachment: fixed;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4 6);
     margin: 70px;
-    margin-top: -150px;
     border-top: 0.5px solid rgb(245, 94, 80);
     border-bottom: 0.5px solid rgb(255, 0, 93);
 }

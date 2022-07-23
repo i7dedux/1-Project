@@ -29,14 +29,14 @@ class Calculator {
         // choosing the operation in the next step in order to proceed between numbers
     chooseOperation(operation) {
         if (this.operation != null) {
-            this.compute();
+            this.operate();
         }
         this.operation = operation;
         this.previousOperand = this.currentOperand;
         this.currentOperand = "";
         this.updateDisplay();
     }
-    compute() {
+    operate() {
         let computation = "";
         if (this.currentOperand == "" || this.previousOperand == "") {
             return;
@@ -95,7 +95,7 @@ operationButtons.forEach(button => {
     });
 });
 equalsButton.addEventListener('click', () => {
-    calculator.compute();
+    calculator.operate();
 });
 deleteButton.addEventListener('click', () => {
     calculator.delete();

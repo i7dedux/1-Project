@@ -1,10 +1,12 @@
 const result = document.querySelector("#result");
+// here we will get for each options choice and proceed computerChoice function
 document.querySelectorAll("#opts a").forEach((a) =>
     a.addEventListener("click", (e) => {
         computerChoice(e);
     })
 );
 
+// this function operates final work which compares user and computer choice to make final decision
 function computerChoice(e) {
     let choices = ["Rock", "Paper", "Scissors"];
 

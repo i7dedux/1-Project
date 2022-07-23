@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'MainText';
-    src: url(Roboto/Roboto-Bold.ttf);
+    src: url(../Roboto/Roboto-Bold.ttf);
 }
 
 @font-face {
     font-family: 'ImpText';
-    src: url(Roboto/Roboto-Regular.ttf);
+    src: url(../oboto/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: 'ItcText';
-    src: url(Roboto/Roboto-MediumItalic.ttf);
+    src: url(../Roboto/Roboto-MediumItalic.ttf);
 }
 
 body {
@@ -71,7 +71,7 @@ a {
 }
 
 .header {
-    background-image: url('img/backbody.jpg');
+    background-image: url('../img/backbody.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.36);
@@ -119,7 +119,7 @@ a {
 }
 
 .second-column {
-    background-image: url('img/body.jpg');
+    background-image: url('../img/body.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -173,7 +173,7 @@ a {
 .quote {
     padding: 50px 100px;
     height: 150px;
-    background-image: url('img/sky.jpg');
+    background-image: url('../img/sky.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -194,7 +194,7 @@ a {
 /* sign-up */
 
 .sign-up {
-    background-image: url('img/sunset.jpg');
+    background-image: url('../img/sunset.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -262,7 +262,7 @@ a {
     width: 100%;
     height: 70px;
     margin-top: 100px;
-    background-image: url('img/sky.jpg');
+    background-image: url('../img/sky.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

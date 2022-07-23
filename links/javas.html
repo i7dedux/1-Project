@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../art/design.css">
+    <link rel="stylesheet" href="../art/javas.css">
+    <title>Page - About</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="calc.html">Calculator</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+                <li class="active"><a href="#">JS</a></li>
+                <li> <a href="#" class="banner"><span>World Wide Travel</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="form">
+        <h1>Math Calculations</h1>
+        <br>
+        <h3>Digonal</h3>
+        <input type="number" id="side" placeholder="Side of Square">
+        <button onclick="FindD()">Result</button>
+        <p>Digonal of Square: <span id="show"></span></p>
+        <br><br>
+        <h3>Area of Triangle</h3>
+        <input type="number" id="side1" placeholder="Side 1">
+        <br><br>
+        <input type="number" id="side2" placeholder="Side 2">
+        <br><br>
+        <input type="number" id="side3" placeholder="Side 3">
+        <br><br>
+        <button onclick="TrArea()">Result</button>
+        <p>Area of Triangle: <span id="display"></span></p>
+        <br><br>
+        <h3>Area and Circumference of Circle</h3>
+        <input type="number" id="radius" placeholder="Radius">
+        <button onclick="Circle()">Result</button>
+        <p>Circumference: <span id="cCircum"></span></p>
+        <p>Area: <span id="cArea"></span></p>
+        <br><br>
+        <h3>The Largest out of 2 Numbers</h3>
+        <input type="number" id="num1" placeholder="1st Num">
+        <br><br>
+        <input type="number" id="num2" placeholder="2nd Num">
+        <br><br>
+        <button onclick="FindLargest()">Result</button>
+        <p>The Largest is: <span id="largest"></span></p>
+        <h3>Find Odd or Even</h3>
+        <input type="number" id="num" placeholder="Enter a number">
+        <button onclick="oddEven()">Result</button>
+        <p>The Number is: <span id="oddEven"></span></p>
+    </div>
+
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

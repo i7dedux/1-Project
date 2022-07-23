@@ -13,7 +13,7 @@ class Calculator {
             this.operation = undefined;
             this.updateDisplay();
         }
-        // this function is going to add next numeric value
+        // this function is going to save not to have next dot
     append(number) {
             if (number == "." && this.currentOperand.includes(".")) {
                 return;

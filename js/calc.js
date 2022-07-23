@@ -5,8 +5,7 @@ const equalsButton = document.querySelector('[data-equals]');
 const clearButton = document.querySelector('[data-clears]');
 const previous_Operand = document.querySelector('.previous-operand');
 const current_Operand = document.querySelector('.current-operand');
-
-class Calculator {
+class Calc {
     constructor(prev, current) {
             this.prev = prev;
             this.current = current;
@@ -30,12 +29,12 @@ class Calculator {
             this.updateDisplay();
         }
         // function erase one num back
-    delete() {
+    del() {
             this.currentOperand = this.currentOperand.toString().slice(0, -1);
             this.updateDisplay();
         }
         // choosing the operation in the next step in order to proceed between numbers
-    chooseOperation(operation) {
+    getOp(operation) {
         if (this.operation != null) {
             this.operate();
         }
@@ -83,25 +82,24 @@ class Calculator {
 }
 
 
-
-let calculator = new Calculator(previous_Operand, current_Operand);
+let newOp = new Calc(previous_Operand, current_Operand);
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
-        calculator.append(button.textContent);
+        newOp.append(button.textContent);
     });
 });
 operationButtons.forEach(button => {
     button.addEventListener('click', () => {
-        calculator.chooseOperation(button.textContent);
+        newOp.getOp(button.textContent);
     });
 });
 equalsButton.addEventListener('click', () => {
-    calculator.operate();
+    newOp.operate();
 });
 deleteButton.addEventListener('click', () => {
-    calculator.delete();
+    newOp.del();
 });
 clearButton.addEventListener('click', () => {
-    calculator.clear();
+    newOp.clear();
 });
